@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.AdminDashboardController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="600"
+      prefHeight="400"
+      styleClass="root">
+
+    <Label text="Admin Dashboard" styleClass="title-label"/>
+    <Button fx:id="manageUsersButton" text="Manage Users" onAction="#handleManageUsers" styleClass="button"/>
+    <Button fx:id="viewReportsButton" text="View Reports" onAction="#handleViewReports" styleClass="button"/>
+    <Button fx:id="manageReservationsButton" text="Manage Reservations" onAction="#handleManageReservations" styleClass="button"/>
+    <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" styleClass="button"/>
+
+</VBox>
