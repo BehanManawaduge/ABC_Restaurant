@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServiceController" spacing="10" alignment="CENTER">
+    <TextField fx:id="serviceNameField" promptText="Service Name"/>
+    <TextField fx:id="descriptionField" promptText="Description"/>
+    <TextField fx:id="priceField" promptText="Price"/>
+    <Button text="Add Service" onAction="#addService"/>
+</VBox>
