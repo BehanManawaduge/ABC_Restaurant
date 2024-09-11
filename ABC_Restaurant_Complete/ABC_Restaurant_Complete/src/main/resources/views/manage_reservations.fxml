@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.ManageReservationsController"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="600"
+      prefHeight="400">
+
+    <Label text="Manage Reservations"/>
+    <TableView fx:id="reservationsTable" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="reservationIdColumn" text="Reservation ID"/>
+            <TableColumn fx:id="serviceTypeColumn" text="Service Type"/>
+            <TableColumn fx:id="reservationDateColumn" text="Reservation Date"/>
+        </columns>
+    </TableView>
+    <Button text="Add Reservation" onAction="#handleAddReservation"/>
+    <Button text="Delete Reservation" onAction="#handleDeleteReservation"/>
+
+</VBox>
